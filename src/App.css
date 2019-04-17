@@ -1,5 +1,9 @@
+
 .details{
     background: #999;
     width: 100%;
     height: 100%;
+    width: calc(100% - 40px);
+    padding-left: 20px;
+    padding-right: 20px;
 }

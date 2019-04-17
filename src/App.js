@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import LocationList from './components/LocationList';
 import {Container,Row,Col,Navbar,Nav,Form,FormControl,Button} from 'react-bootstrap';
+import ForecastExtended from './components/ForecastExtended';
 
 const cities = [
   'Arequipa, PE',
@@ -43,10 +44,14 @@ constructor(){
           </Form>
         </Navbar>
         <Row>
-          <h1>Titulo</h1>
+          <Col md={12}>
+            <h1>Titulo</h1>
+          </Col>
         </Row>
         <Row>
-          <h5>API de cLimas y pronóstios</h5>
+          <Col md={12}>
+            <h5>API de Climas y pronóstios</h5>
+          </Col>
         </Row>
         <Row>
           <Col md={5}>
@@ -54,9 +59,14 @@ constructor(){
           </Col>
           <Col md={7} >
             <div className = "details">
-              {city?city:"no se ha seleccionado ninguna ciudad"}
-            </div>
+            {/* pregunta */}
+              {city?
+              // si 
+                    <ForecastExtended city={city}/>:
+              // no
+                    "no se ha seleccionado ninguna ciudad"}
 
+            </div>
           </Col>
         </Row>
       </Container>
