@@ -20,8 +20,8 @@ constructor(){
 }
 
   handleLocationListClick = (city)=>{
-    console.log("Click en App JS");
-    console.log(city);  
+    // console.log("Click en App JS");
+    // console.log(city);  
     this.setState({
       city:city
     });

@@ -28,7 +28,7 @@ const transformData = (id)=>{
 export const transformForcastData = (data)=>{
     
     data = data.list.filter((item)=>{
-        console.log(moment.unix(item.dt).utc().hour());
+        // console.log(moment.unix(item.dt).utc().hour());
         
         return moment.unix(item.dt).utc().hour() === 6 ||
                moment.unix(item.dt).utc().hour() === 12 ||

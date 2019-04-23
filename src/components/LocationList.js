@@ -11,7 +11,7 @@ const LocationList = (props)=>{
             return <WeatherLocation city={city}
                                     key={i}
                                     onWeatherLocationClick = {()=>{
-                                        console.log("Me hicieron click");
+                                        // console.log("Me hicieron click");
                                         onSelectLocation(city);
                                         
                                     }}/>

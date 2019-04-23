@@ -11,21 +11,21 @@ class WeatherLocation extends Component{
             city: 'Cargando...',
             data: null
         }
-        console.log("CONSTRUCTOR");
+        // console.log("CONSTRUCTOR");
     }
 
     componentWillMount(){
-        console.log("UNSAFE componentWillMount");
+        // console.log("UNSAFE componentWillMount");
     }
     componentDidMount(){
-        console.log("componentDidMount");
+        // console.log("componentDidMount");
         this.updateState();
     }
     componentDidUpdate(){
-        console.log("componentDidUpdate");
+        // console.log("componentDidUpdate");
     }
     componentWillUpdate(){
-        console.log("UNSAFE componentWillUpdate");
+        // console.log("UNSAFE componentWillUpdate");
     }
 
 
@@ -77,7 +77,7 @@ class WeatherLocation extends Component{
     }
 
     render(){
-        console.log("RENDER");
+        // console.log("RENDER");
         
         return (<div className="weatherLocationCont" onClick = {this.props.onWeatherLocationClick}>
                     <Location city={this.state.city}/>
